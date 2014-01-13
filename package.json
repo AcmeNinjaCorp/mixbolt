@@ -1,0 +1,10 @@
+{
+	"name": "Mixbolt",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"rehab":"0.0.x",
+		"nib":"1.0.x",
+		"http-server":"0.6.x"
+	}
+}
