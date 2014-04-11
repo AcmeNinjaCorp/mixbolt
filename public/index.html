@@ -4,79 +4,91 @@
 		<script src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="js/app.js"></script>
+		<title>MixBolt | Online DJ software</title>
 	</head>
 	<body>
 
-		<div id="player">
-	<div id="left-deck" class="deck">
-	<span id="left-deck-info" class="deck-info">--</span>
-	<canvas id="left-deck-scope" class="deck-scope"></canvas>
-	<canvas id="left-deck-position" class="deck-position"></canvas>
-	<div id="left-deck-controls" class="deck-controls">
-		<canvas id="left-deck-sync-button" class="deck-sync-button"></canvas>
-		<canvas id="left-deck-first-beat" class="deck-first-beat"></canvas>
-		<canvas id="left-deck-bpm" class="deck-bpm"></canvas>
-		<div class="multiple-buttons">
-			<canvas id="left-deck-half-button" class="deck-multiple"></canvas>
-			<canvas id="left-deck-double-button" class="deck-multiple"></canvas>
-		</div>
-		<canvas id="left-deck-tap-button" class="deck-tap"></canvas>
-		<canvas id="left-deck-beep-button" class="deck-beep"></canvas>
-		<canvas id="left-deck-save-button" class="deck-save"></canvas>
-	</div>
-	<canvas id="left-deck-play-button" class="deck-play-button"></canvas>
-	<!-- <canvas id="left-deck-controls-button" class="deck-controls-button"></canvas> -->
-	<canvas id="left-deck-pitch" class="deck-pitch"></canvas>
-	<div id="left-controls" class="controls">
-		<canvas id="left-looper" class="looper"></canvas>
-	</div>
-</div>
-	<div id="eq">
-	<div id="eq-gain">
-		<div class="eq-bank"><canvas id="left-eq-gain" class="eq-knob"></canvas></div>
-		<div class="eq-mid"><canvas id="mid-eq-gain"></canvas></div>
-		<div class="eq-bank"><canvas id="right-eq-gain" class="eq-knob"></canvas></div>
-	</div>
-	<div id="left-eq-bank" class="eq-bank">
-		<canvas id="left-eq-high" class="eq-knob"></canvas>
-		<canvas id="left-eq-mid" class="eq-knob"></canvas>
-		<canvas id="left-eq-low" class="eq-knob"></canvas>
-	</div>
-	<div class="eq-mid">
-		<canvas id="mid-eq"></canvas>
-	</div>
-	<div id="right-eq-bank" class="eq-bank">
-		<canvas id="right-eq-high" class="eq-knob"></canvas>
-		<canvas id="right-eq-mid" class="eq-knob"></canvas>
-		<canvas id="right-eq-low" class="eq-knob"></canvas>
-	</div>
-	<div id="mixer"><canvas id="xfader"></canvas></div>
-	</div>
-		<div id="right-deck" class="deck">
-		<span id="right-deck-info" class="deck-info">--</span>
-		<canvas id="right-deck-scope" class="deck-scope"></canvas>
-		<canvas id="right-deck-position" class="deck-position"></canvas>
-		<div id="right-deck-controls" class="deck-controls">
-			<canvas id="right-deck-sync-button" class="deck-sync-button"></canvas>
-			<canvas id="right-deck-first-beat" class="deck-first-beat"></canvas>
-			<canvas id="right-deck-bpm" class="deck-bpm"></canvas>
-			<div class="multiple-buttons">
-				<canvas id="right-deck-half-button" class="deck-multiple"></canvas>
-				<canvas id="right-deck-double-button" class="deck-multiple"></canvas>
+	<div id="player">
+		<div id="left-deck" class="deck">
+			<span id="left-deck-info" class="deck-info">--</span>
+			<canvas id="left-deck-scope" class="deck-scope"></canvas>
+			<canvas id="left-deck-position" class="deck-position"></canvas>
+			<div id="left-deck-controls" class="deck-controls">
+				<canvas id="left-deck-sync-button" class="deck-sync-button"></canvas>
+				<canvas id="left-deck-first-beat" class="deck-first-beat"></canvas>
+				<canvas id="left-deck-bpm" class="deck-bpm"></canvas>
+				<div class="multiple-buttons">
+					<canvas id="left-deck-half-button" class="deck-multiple"></canvas>
+					<canvas id="left-deck-double-button" class="deck-multiple"></canvas>
+				</div>
+				<canvas id="left-deck-tap-button" class="deck-tap"></canvas>
+				<canvas id="left-deck-beep-button" class="deck-beep"></canvas>
+				<canvas id="left-deck-save-button" class="deck-save"></canvas>
 			</div>
-			<canvas id="right-deck-tap-button" class="deck-tap"></canvas>
-			<canvas id="right-deck-beep-button" class="deck-beep"></canvas>
-			<canvas id="right-deck-save-button" class="deck-save"></canvas>
+			<canvas id="left-deck-play-button" class="deck-play-button"></canvas>
+			<canvas id="left-deck-pitch" class="deck-pitch"></canvas>
+			<div id="left-controls" class="controls">
+				<canvas id="left-looper" class="looper"></canvas>
+			</div>
+			<div class="clearfix"></div>
 		</div>
-		<canvas id="right-deck-play-button" class="deck-play-button"></canvas>
-		<!-- <canvas id="right-deck-controls-button" class="deck-controls-button"></canvas> -->
-		<canvas id="right-deck-pitch" class="deck-pitch"></canvas>
-		<div id="right-controls" class="controls">
-			<canvas id="right-looper" class="looper"></canvas>
+		<div id="eq">
+			<div id="eq-gain">
+				<div class="eq-bank"><canvas id="left-eq-gain" class="eq-knob"></canvas></div>
+				<div class="eq-mid"><canvas id="mid-eq-gain"></canvas></div>
+				<div class="eq-bank"><canvas id="right-eq-gain" class="eq-knob"></canvas></div>
+			</div>
+			<div id="left-eq-bank" class="eq-bank">
+				<canvas id="left-eq-high" class="eq-knob"></canvas>
+				<canvas id="left-eq-mid" class="eq-knob"></canvas>
+				<canvas id="left-eq-low" class="eq-knob"></canvas>
+			</div>
+			<div class="eq-mid">
+				<canvas id="mid-eq"></canvas>
+			</div>
+			<div id="right-eq-bank" class="eq-bank">
+				<canvas id="right-eq-high" class="eq-knob"></canvas>
+				<canvas id="right-eq-mid" class="eq-knob"></canvas>
+				<canvas id="right-eq-low" class="eq-knob"></canvas>
+			</div>
+			<div id="mixer"><canvas id="xfader"></canvas></div>
 		</div>
+		<div id="right-deck" class="deck">
+			<span id="right-deck-info" class="deck-info">--</span>
+			<canvas id="right-deck-scope" class="deck-scope"></canvas>
+			<canvas id="right-deck-position" class="deck-position"></canvas>
+			<div id="right-deck-controls" class="deck-controls">
+				<canvas id="right-deck-sync-button" class="deck-sync-button"></canvas>
+				<canvas id="right-deck-first-beat" class="deck-first-beat"></canvas>
+				<canvas id="right-deck-bpm" class="deck-bpm"></canvas>
+				<div class="multiple-buttons">
+					<canvas id="right-deck-half-button" class="deck-multiple"></canvas>
+					<canvas id="right-deck-double-button" class="deck-multiple"></canvas>
+				</div>
+				<canvas id="right-deck-tap-button" class="deck-tap"></canvas>
+				<canvas id="right-deck-beep-button" class="deck-beep"></canvas>
+				<canvas id="right-deck-save-button" class="deck-save"></canvas>
+			</div>
+			<canvas id="right-deck-play-button" class="deck-play-button"></canvas>
+			<canvas id="right-deck-pitch" class="deck-pitch"></canvas>
+			<div id="right-controls" class="controls">
+				<canvas id="right-looper" class="looper"></canvas>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
 	</div>
-	<div class="clearfix"></div>
-</div>
-</div>
+
+	<!-- Some info -->
+	<div class="content">
+		<p>Welcome to MixBolt, a DJ tool for your browser. This software is open source, licensed under LGPL v3.
+		You can find the code, license and instructions at <a href="https://github.com/adaline/mixbolt">github.com/adaline/mixbolt</a>.</p>
+		
+		<p>To get started, just drag a file from your computer onto ether deck and hit play.</p>
+
+		<p>This project was developed over a 2 year period by <a href="http://v-a-l.co.uk/">Valentin Arkhipov</a>, I hope it lets everyone enjoy thier music in a new way :)</p>
+
+		<iframe width="640" height="480" src="//www.youtube.com/embed/NZGnZ6ZPvlI" frameborder="0" allowfullscreen></iframe>
+	</div>
 	</body>
 </html>

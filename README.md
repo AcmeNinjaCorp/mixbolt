@@ -8,7 +8,7 @@ Getting started
 ---
 Check out the project to your machine, you will need NodeJS installed with `coffee-script` and `stylus` modules available.
 Run `npm install` to get the dependencies.
-To compile the JS run `cake compile-client`, to compile the stylesheets run `compile-style`.
+To compile the JS run `cake compile-client`, to compile the stylesheets run `cake compile-style`.
 
 Run it
 ---
