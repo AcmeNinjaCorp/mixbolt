@@ -1,0 +1,199 @@
+img {
+  border: none;
+}
+body {
+  background-color: #333;
+  background-image: url("debut_dark.png");
+  color: #ddd;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+  min-width: 1000px;
+}
+.clearfix {
+  clear: both;
+}
+.content {
+  width: 640px;
+  margin: 0 auto;
+}
+#logo {
+  display: block;
+}
+#top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  z-index: 999;
+}
+.line {
+  border-top: 1px dotted #666;
+  margin-bottom: 20px;
+}
+a {
+  color: #0080ff;
+}
+.button {
+  display: inline-block;
+  padding: 5px;
+  background-color: #ded;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #ada;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.button:hover {
+  background-color: #595;
+  border-color: #474;
+  color: #fff;
+}
+#player .deck {
+  width: 400px;
+  height: 265px;
+  background-color: #444;
+  float: left;
+}
+#player .deck .deck-info {
+  display: block;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#player .deck .deck-controls {
+  display: block;
+  background-color: #333;
+  height: 50px;
+}
+#player .deck .deck-controls .deck-sync-button {
+  cursor: pointer;
+  padding: 10px 5px;
+  float: left;
+}
+#player .deck .deck-controls .deck-first-beat {
+  cursor: n-resize;
+  cursor: ns-resize;
+  float: left;
+  padding: 10px 5px;
+}
+#player .deck .deck-controls .deck-bpm {
+  cursor: n-resize;
+  cursor: ns-resize;
+  float: left;
+  padding: 10px 0 10px 5px;
+}
+#player .deck .deck-controls .multiple-buttons {
+  float: left;
+  padding: 10px 5px 10px 0;
+}
+#player .deck .deck-controls .deck-tap {
+  cursor: pointer;
+  padding: 10px 5px;
+  float: left;
+}
+#player .deck .deck-controls .deck-beep {
+  cursor: pointer;
+  padding: 10px 5px;
+  float: left;
+}
+#player .deck .deck-controls .deck-save {
+  cursor: pointer;
+  padding: 10px 5px;
+  float: right;
+}
+#player .deck .deck-scope,
+#player .deck .deck-position {
+  cursor: text;
+  padding: 5px;
+}
+#player .deck .deck-play-button {
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+}
+#player .deck .deck-controls-button {
+  cursor: pointer;
+  padding: 10px;
+  float: left;
+}
+#player .deck .deck-pitch {
+  cursor: n-resize;
+  cursor: ns-resize;
+  padding: 5px;
+  float: right;
+}
+#player .deck .controls {
+  display: block;
+  clear: both;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  background-color: #555;
+}
+#player .deck .controls .looper {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+#player .lightup {
+  background-color: #888;
+}
+#player #eq {
+  background-color: #444;
+  width: 130px;
+  padding-top: 5px;
+  margin: 0 5px;
+  float: left;
+}
+#player #eq .eq-bank {
+  float: left;
+  width: 42px;
+}
+#player #eq .eq-bank .eq-knob {
+  padding: 10px 4px;
+  cursor: n-resize;
+  cursor: ns-resize;
+}
+#player #eq .eq-mid {
+  float: left;
+  width: 46px;
+}
+#player #eq #mixer {
+  float: left;
+  padding: 15px 5px;
+  background-color: #444;
+}
+#player #eq #eq-gain {
+  display: block;
+  height: 50px;
+  width: 130px;
+}
+#player #eq #eq-gain #mid-eq-gain {
+  width: 46px;
+  height: 50px;
+}
+#player * {
+  display: block;
+}
+#player {
+  text-align: center;
+  z-index: 999;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
